@@ -1,20 +1,50 @@
 import turtle
 import random
+from tokenize import endpats
+
 screen = turtle.Screen()
 screen.screensize( 500,  500)
 t = turtle.Turtle()
+t2 = turtle.Turtle()
 screen.bgcolor('tan')
 t.hideturtle()
+t2.hideturtle()
+t.speed(0)
+
 
 t.penup()
 t.goto(0, 100)
 t.pendown()
-t.write("Turtle", font=("arial", 30, "bold"), align="center")
+t.write("Turtle Presentation", font=("arial", 30, "bold"), align="center")
 
 t.penup()
-t.goto(0, -100)
+t.goto(200, -100)
 t.pendown()
-t.write("Presentation", font=("arial", 30, "bold"), align="center")
+t.fillcolor('red')
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+
+t.penup()
+t.goto(-200, -100)
+t.pendown()
+screen.addshape('panthers.gif')
+t.shape('panthers.gif')
+t.stamp()
+t.shape('classic')
+
+t.penup()
+t.goto(0, 300)
+t.pendown()
+screen.addshape('steelers.gif')
+t.shape('steelers.gif')
+t.stamp()
+t.shape('classic')
+
+t2.penup()
+t2.goto(0, -300)
+t2.pendown()
+t2.write("Press Enter to Continue", font=("arial", 30, "normal"), align="center")
 
 slide = input('Press Enter to Continue ')
 t.clear()
@@ -34,12 +64,55 @@ t.stamp()
 t.shape('classic')
 
 t.penup()
+t.goto(-200, -100)
+t.pendown()
+t.write("Steak", font=("arial", 30, "normal"), align="center")
+
+t.penup()
 t.goto(0, 0)
 t.pendown()
 screen.addshape('chicken.gif')
 t.shape('chicken.gif')
 t.stamp()
 t.shape('classic')
+
+t.penup()
+t.goto(0, -100)
+t.pendown()
+t.write("Chicken", font=("arial", 30, "normal"), align="center")
+
+t.penup()
+t.goto(200, 0)
+t.pendown()
+screen.addshape('cookie.gif')
+t.shape('cookie.gif')
+t.stamp()
+t.shape('classic')
+
+t.penup()
+t.goto(200, -200)
+t.pendown()
+t.write("Cookies", font=("arial", 30, "normal"), align="center")
+
+t.penup()
+t.goto(200, 300)
+t.pendown()
+t.fillcolor('green')
+t.begin_fill()
+t.forward(50)
+t.left(90)
+t.forward(50)
+t.left(90)
+t.forward(50)
+t.left(90)
+t.forward(50)
+t.left(90)
+t.end_fill()
+
+t2.penup()
+t2.goto(0, -300)
+t2.pendown()
+t2.write("Press Enter to Continue", font=("arial", 30, "normal"), align="center")
 
 slide = input('Press Enter to Continue ')
 t.clear()
@@ -48,6 +121,86 @@ t.goto(0, 200)
 t.pendown()
 t.write("Hobbies", font=("arial", 30, "bold"), align="center")
 screen.bgcolor('red')
+
+t.penup()
+t.goto(-200, 0)
+t.pendown()
+screen.addshape('gym.gif')
+t.shape('gym.gif')
+t.stamp()
+t.shape('classic')
+
+t.penup()
+t.goto(-200,-150 )
+t.pendown()
+t.write("Lifting", font=("arial", 20, "normal"), align="center")
+
+t.penup()
+t.goto(0, 0)
+t.pendown()
+screen.addshape('Bed.gif')
+t.shape('Bed.gif')
+t.stamp()
+t.shape('classic')
+
+t.penup()
+t.goto(0,-100 )
+t.pendown()
+t.write("sleeping", font=("arial", 20, "normal"), align="center")
+
+t.penup()
+t.goto(200, 0)
+t.pendown()
+screen.addshape('book.gif')
+t.shape('book.gif')
+t.stamp()
+t.shape('classic')
+
+t.penup()
+t.goto(200,-100 )
+t.pendown()
+t.write("reading", font=("arial", 20, "normal"), align="center")
+
+t.penup()
+t.goto(0, -150)
+t.pendown()
+screen.addshape('code.gif')
+t.shape('code.gif')
+t.stamp()
+t.shape('classic')
+
+t.penup()
+t.goto(0,-250 )
+t.pendown()
+t.write("coding", font=("arial", 20, "normal"), align="center")
+
+t.penup()
+t.goto(200, 100)
+t.pendown()
+t.fillcolor('aquamarine')
+t.begin_fill()
+t.forward(50)
+t.left(45)
+t.forward(50)
+t.left(45)
+t.forward(50)
+t.left(45)
+t.forward(50)
+t.left(45)
+t.forward(50)
+t.left(45)
+t.forward(50)
+t.left(45)
+t.forward(50)
+t.left(45)
+t.forward(50)
+t.left(45)
+t.end_fill()
+
+t2.penup()
+t2.goto(0, -300)
+t2.pendown()
+t2.write("Press Enter to Continue", font=("arial", 30, "normal"), align="center")
 
 
 slide = input('Press Enter to Continue ')
@@ -58,52 +211,96 @@ t.pendown()
 t.write("Favorite Movie", font=("arial", 30, "bold"), align="center")
 screen.bgcolor('green')
 
+t.penup()
+t.goto(200, -100)
+t.pendown()
+screen.addshape('movie1.gif')
+t.shape('movie1.gif')
+t.stamp()
+t.shape('classic')
+
+t.penup()
+t.goto(-200, -100)
+t.pendown()
+screen.addshape('movie2.gif')
+t.shape('movie2.gif')
+t.stamp()
+t.shape('classic')
+
+t.penup()
+t.goto(0,0 )
+t.pendown()
+t.write("Interstellar", font=("pacifico", 30, "normal"), align="center")
+
+t.penup()
+t.goto(200, 100)
+t.pendown()
+t.fillcolor('yellow')
+t.begin_fill()
+t.goto(250, 100)
+t.goto(225, 150)
+t.goto(200, 100)
+t.end_fill()
+
+t2.penup()
+t2.goto(0, -300)
+t2.pendown()
+t2.write("Press Enter to Continue", font=("arial", 30, "normal"), align="center")
+
 slide = input('Press Enter to Continue ')
 t.clear()
+screen.bgcolor('aquamarine')
+
 t.penup()
-t.goto(0, 200)
+t.goto(0, 150)
 t.pendown()
 t.write("Favorite Sport", font=("arial", 30, "bold"), align="center")
-screen.bgcolor('aquamarine')
+
+t.penup()
+t.goto(0,100)
+t.pendown()
+t.write("Hobby Horsing", font=("arial", 30, "normal"), align="center")
+
+t.penup()
+t.goto(200, -100)
+t.pendown()
+screen.addshape('sport.gif')
+t.shape('sport.gif')
+t.stamp()
+t.shape('classic')
+t.penup()
+t.goto(-200, -100)
+t.pendown()
+screen.addshape('hobby.gif')
+t.shape('hobby.gif')
+t.stamp()
+t.shape('classic')
+
+t.penup()
+t.goto(-30,-60)
+t.pendown()
+t.fillcolor('dodgerblue')
+t.begin_fill()
+t.goto(30,-60)
+t.goto(15,-30)
+t.goto(-15,-30)
+t.goto(-30,-60)
+t.end_fill()
+
+t2.penup()
+t2.goto(0, -300)
+t2.pendown()
+t2.write("Press Enter to Continue", font=("arial", 30, "normal"), align="center")
 
 slide = input('Press Enter to Continue ')
 
 screen.bgcolor('white')
 
 t.clear()
+t2.clear()
 t.penup()
 t.goto(0, 100)
 t.pendown()
 t.write("The End", font=("arial", 40, "bold"), align="center")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 turtle.done()
